@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<!-- Frameworks -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Frameworks -->
+
+	<title>Google Froms Inspried Form</title>
+
+	<!-- Custom -->
+	<link rel="stylesheet" href="custom/hformsstyle.css">
+	<script src="custom/hform.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Custom -->
+
+</head>
+
+<body>
+
+	<!-- Side Toolbar -->
+	<div class="container">
+
+		<div class="side-menu">
+			<h3 class="add-question" data-toggle="tooltip" data-placement="right" title="Add a question">
+				<span class="glyphicon glyphicon-plus-sign"></span>
+			</h3>
+
+			<h3 data-toggle="tooltip" data-placement="right" title="Submit your Form" class="submit-question" style="cursor: pointer;">
+				<span class="glyphicon glyphicon-play-circle"></span>
+			</h3>
+		</div>
+		<!-- Side Toolbar -->
+
+
+		<!-- Form Content -->
+		<div class="row">
+
+
+			<form>
+				<div class="col-lg-12 form-container">
+					<div class="form-group">
+
+						<div class="static-form">
+							<div class="parent-class">
+								<div class="group">
+									<input class="text-one" id="thatbox" type="text" value="Untitled form" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+								</div>
+
+								<div class="group">
+									<input class="text-one" id="thisbox" type="text" placeholder="Form description" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+								</div>
+							</div>
+						</div>
+
+						<div id="sortable">
+							<div class="ui-state-default questions">
+								<hr>
+								<span class="ui-icon ui-icon-arrowthick-2-n-s">...</span>
+								<br>
+								<hr>
+								<div style="display: inline-block;">
+									<div style="float: left;">
+										<input class="question-text" type="text" value="Untitled Question" required>
+										<span class="highlight"></span>
+										<span class="bar-question"></span>
+									</div>
+
+
+									<div class="type-questions" style="float: right; margin-top: 15px; margin-left: 25px;">
+										<select id="type-question">
+											<h3>
+												<option value="1">Single Selection</option>
+											</h3>
+											<h3>
+												<option value="2">Multiple Selection</option>
+											</h3>
+											<h3>
+												<option value="3">Numeric Value</option>
+											</h3>
+										</select>
+									</div>
+								</div>
+								<br>
+
+								<div class="questions-survey">
+									<div class="form-group">
+										<div class="question-container" style="margin-left: 40px;">
+											<div class="dynamic-content" style="margin-bottom: 15px;">
+												<div class="questions-con">
+													<h5 style="float: left; margin-left: 15px;">
+														<i class="material-icons radio-icon">&#xe836;</i>
+													</h5>
+													<input type="text" class="option" name="ques" value="option">
+													<span class="highlight"></span>
+													<span class="bar-ques"></span>
+													<span class="remove-option" style="position: relative; top: -20px; left: 40%; color: rgba(0, 0, 0, 0.32); cursor: pointer;">
+														<i class="material-icons">&#xe5cd;</i>
+													</span>
+												</div>
+
+											</div>
+
+											<div class="static-content">
+												<h5 style="float: left;">
+													<i class="material-icons radio-icon">&#xe836;</i>
+												</h5>
+												<input type="text" class="option-add" name="ques" value="Add option">
+												<span class="highlight"></span>
+												<span class="bar-ques"></span>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<h3>
+									<span class="delete-question">
+										<i class="material-icons">&#xe872;</i>
+									</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Form Content -->
+
+</body>
+
+</html>
